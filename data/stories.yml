@@ -2,6 +2,11 @@ version: "3.1"
 
 stories:
 
+- story: usuario reporta sintoma
+  steps:
+  - intent: informar_sintomas
+  - action: utter_entendido  
+
 - story: happy path
   steps:
   - intent: greet

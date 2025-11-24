@@ -1,6 +1,21 @@
 version: "3.1"
 
 nlu:
+- intent: informar_sintomas
+  examples: |
+    -EL paciente tiene [Fiebre](sintoma)
+    -La persona presenta [Tos](sintoma)
+    -Se observa [Dificultad para respirar](sintoma)
+    -El individuo muestra [Fatiga](sintoma)
+    -Paciente con [Dolor de cabeza](sintoma)
+    -El sujeto tiene [Dolor muscular](sintoma)
+    -La persona experimenta [Pérdida del gusto](sintoma)
+    -Paciente con [Pérdida del olfato](sintoma)
+    -El individuo presenta [Congestión nasal](sintoma)
+    -La persona tiene [Dolor de garganta](sintoma)
+    -Paciente con [Náuseas](sintoma)
+    -El sujeto muestra [Vómitos](sintoma)
+    -La persona experimenta [Diarrea](sintoma)
 - intent: greet
   examples: |
     - hey
