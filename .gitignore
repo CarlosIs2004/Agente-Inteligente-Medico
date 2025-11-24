@@ -1,0 +1,11 @@
+# --- Archivos Pesados y Basura ---
+models/* 
+.rasa/              
+__pycache__/        
+*.pyc              
+.rasa/
+.rasa_cache/
+results/
+reports/
+
+

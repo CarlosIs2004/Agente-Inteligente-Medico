@@ -1,0 +1,15 @@
+services:
+  rasa:
+    container_name: rasa_server
+    image: rasa/rasa:3.6.20-full
+    #user: "1000:1000"
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+      - --debug
