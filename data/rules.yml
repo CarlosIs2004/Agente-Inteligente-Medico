@@ -11,3 +11,9 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Ejecutar triaje cuando se informe un síntoma
+  steps:
+  - intent: informar_sintomas
+  - action: utter_entendido
+  - action: action_evaluar_triaje

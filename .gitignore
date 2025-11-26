@@ -7,5 +7,6 @@ __pycache__/
 .rasa_cache/
 results/
 reports/
-
+.config/
+.keras/
 

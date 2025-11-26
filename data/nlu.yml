@@ -3,107 +3,57 @@ version: "3.1"
 nlu:
 - intent: informar_sintomas
   examples: |
-    -EL paciente tiene [Fiebre](sintoma)
-    -La persona presenta [Tos](sintoma)
-    -Se observa [Dificultad para respirar](sintoma)
-    -El individuo muestra [Fatiga](sintoma)
-    -Paciente con [Dolor de cabeza](sintoma)
-    -El sujeto tiene [Dolor muscular](sintoma)
-    -La persona experimenta [Pérdida del gusto](sintoma)
-    -Paciente con [Pérdida del olfato](sintoma)
-    -El individuo presenta [Congestión nasal](sintoma)
-    -La persona tiene [Dolor de garganta](sintoma)
-    -Paciente con [Náuseas](sintoma)
-    -El sujeto muestra [Vómitos](sintoma)
-    -La persona experimenta [Diarrea](sintoma)
+    - Tengo [fiebre](sintoma)
+    - Estoy con [tos](sintoma)
+    - Siento [dolor de cabeza](sintoma)
+    - Me duele el [pecho](sintoma)
+    - Estoy con [fatiga](sintoma)
+    - Tengo [náuseas](sintoma)
+    - Estoy con [vómitos](sintoma)
+    - Tengo [diarrea](sintoma)
+    - Siento [mareo](sintoma)
+    - Estoy con [escalofríos](sintoma)
+    - Tengo [dolor abdominal](sintoma)
+    - Estoy con [congestión nasal](sintoma)
+    - Tengo [dolor de garganta](sintoma)
+    - He perdido el [gusto](sintoma)
+    - He perdido el [olfato](sintoma)
+
 - intent: greet
   examples: |
-    - hey
-    - hello
     - hola
-    - que tal
+    - hey
     - buenas
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hello
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - adiós
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - hasta luego
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - sí
+    - claro
+    - correcto
 
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nunca
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfecto
+    - genial
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - estoy triste
+    - no me siento bien
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - eres un bot?
+    - soy humano?

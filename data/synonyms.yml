@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- synonym: fiebre
+  examples: |
+    - febril
+    - fiebre alta
+    - fiebres
+
+- synonym: tos
+  examples: |
+    - toser
+    - tos seca
+    - tos persistente
+
+- synonym: dolor_de_cabeza
+  examples: |
+    - cefalea
+    - jaqueca
+    - dolor cabeza
+    - dolor en la cabeza
+    - dolor de cabeza
+
+- synonym: dolor_de_pecho
+  examples: |
+    - dolor pecho
+    - opresión en el pecho
+
+- synonym: fatiga
+  examples: |
+    - cansancio
+    - agotamiento
+    - debilidad
+
+- synonym: nauseas
+  examples: |
+    - náuseas
+    - mareo con ganas de vomitar
+
+- synonym: vomito
+  examples: |
+    - vómitos
+    - devolver
+
+- synonym: diarrea
+  examples: |
+    - evacuaciones frecuentes
+    - deposiciones líquidas
+
+- synonym: mareo
+  examples: |
+    - vértigo
+    - aturdimiento
+
+- synonym: escalofrios
+  examples: |
+    - escalofrío
+    - temblores
+
+- synonym: dolor_abdominal
+  examples: |
+    - dolor en el abdomen
+    - dolor estomacal
+
+- synonym: congestion_nasal
+  examples: |
+    - nariz tapada
+    - nariz congestionada
+
+- synonym: dolor_de_garganta
+  examples: |
+    - dolor garganta
+    - dolor de la garganta
+
+- synonym: perdida_gusto
+  examples: |
+    - pérdida del gusto
+    - no siento sabor
+
+- synonym: perdida_olfato
+  examples: |
+    - pérdida del olfato
+    - no siento olor

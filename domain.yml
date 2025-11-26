@@ -1,6 +1,7 @@
 version: "3.1"
 
 intents:
+  - informar_sintomas
   - greet
   - goodbye
   - affirm
@@ -8,8 +9,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - informar_sintomas
-
 
 entities:
   - sintoma
@@ -18,33 +17,24 @@ slots:
   sintoma:
     type: text
     mappings:
-    - type: from_entity
-      entity: sintoma
+      - type: from_entity
+        entity: sintoma
 
 responses:
-  utter_entendido:
-  - text: "He registrado el síntoma {sintoma}. Voy a consultar la gravedad."
-
   utter_greet:
-  - text: "Hola, soy tu asistente virtual. ¿Como te puedo ayudar?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+    - text: "¡Hola! ¿Cómo te sientes hoy?"
   utter_goodbye:
-  - text: "Bye"
-
+    - text: "Adiós, ¡cuídate!"
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Sí, soy un bot. Estoy aquí para ayudarte."
+  utter_entendido:
+    - text: "Entendido."
+  utter_happy:
+    - text: "¡Me alegra escuchar eso!"
+  utter_cheer_up:
+    - text: "Espero que tu día mejore."
+  utter_did_that_help:
+    - text: "¿Eso te ayudó?"
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-
+actions:
+  - action_evaluar_triaje
