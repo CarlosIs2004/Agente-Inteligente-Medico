@@ -9,6 +9,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - deny_more
 
 entities:
   - sintoma
@@ -29,6 +30,8 @@ responses:
     - text: "Sí, soy un bot. Estoy aquí para ayudarte."
   utter_entendido:
     - text: "Entendido."
+  utter_register_sintoma:
+    - text: "He registrado el síntoma {sintoma}. ¿Existe algún otro síntoma presente? Escribe el otro sintoma o coloca 'no' para terminar."
   utter_happy:
     - text: "¡Me alegra escuchar eso!"
   utter_cheer_up:
@@ -37,4 +40,6 @@ responses:
     - text: "¿Eso te ayudó?"
 
 actions:
-  - action_evaluar_triaje
+  - action_triaje_completo
+  - action_guardar_sintoma
+  

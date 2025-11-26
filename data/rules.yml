@@ -12,8 +12,20 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Ejecutar triaje cuando se informe un síntoma
+- rule: Registar en el .txt cuando se informe un síntoma
   steps:
   - intent: informar_sintomas
-  - action: utter_entendido
-  - action: action_evaluar_triaje
+  - action: utter_register_sintoma
+  - action: action_guardar_sintoma
+
+- rule: Usuario termina de reportar síntomas
+  steps:
+  - action: utter_register_sintoma
+  - intent: deny_more
+  - action: action_triaje_completo
+
+- rule: Ejecutar triaje cuando finalize el reporte de síntomas
+  steps:
+  - intent: informar_sintomas
+  - action: utter_register_sintoma
+  - action: action_guardar_sintoma

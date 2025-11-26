@@ -12,3 +12,11 @@ Una vez entrenado el modelo, puedes iniciar el contenedor y conversar con tu asi
 ```bash
 docker compose run --rm rasa shell
 ```
+
+## 3. Actualizar el docker compose
+
+```bash
+docker compose down
+docker compose up -d --build
+docker compose run --rm rasa action_server
+```

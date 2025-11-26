@@ -40,7 +40,6 @@ nlu:
 
 - intent: deny
   examples: |
-    - no
     - nunca
 
 - intent: mood_great
@@ -57,3 +56,40 @@ nlu:
   examples: |
     - eres un bot?
     - soy humano?
+
+- intent: confirm_more
+  examples: |
+    - sí
+    - si
+    - sí, también
+    - claro
+    - por supuesto
+    - sí, tengo otro
+    - sí quiero añadir otro
+    - sí, tengo más
+    - sí, otro síntoma
+    - sí, tengo otro síntoma
+    - sí por favor
+    - sí
+    - s
+    - aff
+    - si
+    - si quiero
+    - sí claro
+    - sí, dime
+
+- intent: deny_more
+  examples: |
+    - no
+    - no más
+    - no, gracias
+    - ya no
+    - nada más
+    - no gracias
+    - no, ya está
+    - no, eso es todo
+    - no, nada más
+    - no por ahora
+    - no, suficiente
+    - n
+    - no.

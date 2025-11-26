@@ -7,19 +7,22 @@ services:
     ports:
       - "5005:5005"
     volumes:
-      - ./:/app
+        - ./:/app:rw
+        - ./models:/app/models
+        - ./.rasa:/app/.rasa
     command:
-      - run
-      - --enable-api
-      - --cors
-      - "*"
-      - --debug
+        - run
+        - --enable-api
+        - --cors
+        - "*"
+        - --debug
+    depends_on:
+      - action_server
 
-  actions:
-    container_name: rasa_actions
-    image: rasa/rasa-sdk:3.6.2
-    ports:
-      - "5055:5055"
-    volumes:
-      - ./actions:/app/actions
+  action_server:
+      image: rasa/rasa-sdk:3.1.0
+      ports:
+        - "5055:5055"
+      volumes:
+        - ./actions:/app/actions
 
